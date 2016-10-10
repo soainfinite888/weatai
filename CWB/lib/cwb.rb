@@ -1,9 +1,14 @@
 require 'http'
-require 'active_support/core_ext/hash/conversions'
 require 'yaml'
 
+require 'active_support/core_ext/hash'
+#require 'hash'
+require 'active_support/all'
+require 'net/http'
+require 'http'
+
+
 module CWB
-  
   class CWBApi
     CWB_URL = 'http://opendata.cwb.gov.tw/'
     dataid = "O-A0003-001"
@@ -21,19 +26,16 @@ module CWB
       @access_token = XMl.load(access_token_response.to_s)['access_token']
     end
 
-    file = File.open("data/mconvert.xml", "r")
-    hash = Hash.from_xml(file.read)
-    yaml = hash.to_yaml
-    File.open("data/mirador.yml", "w") { |file| file.write(yaml) }
+    
+    file = Net::HTTP.get_response(URI.parse(CWB_API_URL)).body
 
+    cwbhash = Hash.new
+    cwbhash = Hash.from_xml(file)
+    
+    yaml = cwbhash.to_yaml
 
+    cwbhash.each {|key| puts key}
+    File.open('cwb.yam', 'w'){|file| file.write(yaml)}
 
-
-    private
-
-    def cwb_resource_url(dataid)
-      #{}"http://opendata.cwb.gov.tw/opendataapi?dataid=#{dataid}&authorizationkey=#{apikey}"
-      #URI.join(FB_API_URL, "/#{id}/")
-    end
   end
 end
