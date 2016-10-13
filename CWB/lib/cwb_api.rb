@@ -26,6 +26,7 @@ module CWB
     yaml = hash.to_yaml
     File.open("data/mirador.yml", "w") { |file| file.write(yaml) }
 
+    
 
 
 

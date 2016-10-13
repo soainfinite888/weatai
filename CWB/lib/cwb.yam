@@ -1,9 +1,9 @@
 ---
 cwbopendata:
   xmlns: urn:cwb:gov:tw:cwbcommon:0.1
-  identifier: b6f133dd-14a0-49d5-a099-96a2dafc861e
+  identifier: 6228bd0f-e7b1-4ff6-8e43-b712c344fd00
   sender: weather@cwb.gov.tw
-  sent: '2016-10-10T19:22:12+08:00'
+  sent: '2016-10-10T19:32:10+08:00'
   status: Actual
   msgType: Issue
   dataid: CWB_A0003
@@ -15,7 +15,7 @@ cwbopendata:
     locationName: 基隆
     stationId: '466940'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -25,22 +25,22 @@ cwbopendata:
         value: '27'
     - elementName: WDIR
       elementValue:
-        value: '10.0'
+        value: '20.0'
     - elementName: WDSD
       elementValue:
-        value: '7.4'
+        value: '6.2'
     - elementName: TEMP
       elementValue:
-        value: '23.9'
+        value: '24.1'
     - elementName: HUMD
       elementValue:
-        value: '0.92'
+        value: '0.91'
     - elementName: PRES
       elementValue:
         value: '1007.8'
     - elementName: 24R
       elementValue:
-        value: '71.5'
+        value: '72.5'
     - elementName: H_FX
       elementValue:
         value: '18.4'
@@ -73,7 +73,7 @@ cwbopendata:
     locationName: 淡水
     stationId: '466900'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -86,7 +86,7 @@ cwbopendata:
         value: '10.0'
     - elementName: WDSD
       elementValue:
-        value: '3.5'
+        value: '3.1'
     - elementName: TEMP
       elementValue:
         value: '23.1'
@@ -131,7 +131,7 @@ cwbopendata:
     locationName: 板橋
     stationId: '466880'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -141,10 +141,10 @@ cwbopendata:
         value: '10'
     - elementName: WDIR
       elementValue:
-        value: '200.0'
+        value: '210.0'
     - elementName: WDSD
       elementValue:
-        value: '0.7'
+        value: '0.5'
     - elementName: TEMP
       elementValue:
         value: '23.2'
@@ -153,7 +153,7 @@ cwbopendata:
         value: '0.89'
     - elementName: PRES
       elementValue:
-        value: '1010.6'
+        value: '1010.7'
     - elementName: 24R
       elementValue:
         value: '7.5'
@@ -189,7 +189,7 @@ cwbopendata:
     locationName: 竹子湖
     stationId: '466930'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -202,19 +202,19 @@ cwbopendata:
         value: '40.0'
     - elementName: WDSD
       elementValue:
-        value: '4.6'
+        value: '4.2'
     - elementName: TEMP
       elementValue:
-        value: '20.8'
+        value: '21.0'
     - elementName: HUMD
       elementValue:
-        value: '0.92'
+        value: '0.91'
     - elementName: PRES
       elementValue:
-        value: '943.2'
+        value: '943.5'
     - elementName: 24R
       elementValue:
-        value: '47.0'
+        value: '47.5'
     - elementName: H_FX
       elementValue:
         value: '11.8'
@@ -247,7 +247,7 @@ cwbopendata:
     locationName: 鞍部
     stationId: '466910'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -257,22 +257,22 @@ cwbopendata:
         value: '826'
     - elementName: WDIR
       elementValue:
-        value: '320.0'
+        value: '300.0'
     - elementName: WDSD
       elementValue:
-        value: '2.7'
+        value: '2.4'
     - elementName: TEMP
       elementValue:
-        value: '19.5'
+        value: '19.6'
     - elementName: HUMD
       elementValue:
         value: '0.97'
     - elementName: PRES
       elementValue:
-        value: '920.0'
+        value: '920.1'
     - elementName: 24R
       elementValue:
-        value: '40.0'
+        value: '40.5'
     - elementName: H_FX
       elementValue:
         value: '9.8'
@@ -305,7 +305,7 @@ cwbopendata:
     locationName: 新竹
     stationId: '467571'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -315,19 +315,19 @@ cwbopendata:
         value: '34'
     - elementName: WDIR
       elementValue:
-        value: '20.0'
+        value: '10.0'
     - elementName: WDSD
       elementValue:
-        value: '3.1'
+        value: '2.9'
     - elementName: TEMP
       elementValue:
-        value: '23.4'
+        value: '23.3'
     - elementName: HUMD
       elementValue:
-        value: '0.87'
+        value: '0.88'
     - elementName: PRES
       elementValue:
-        value: '1008.3'
+        value: '1008.5'
     - elementName: 24R
       elementValue:
         value: '1.5'
@@ -363,7 +363,7 @@ cwbopendata:
     locationName: 臺中
     stationId: '467490'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -373,19 +373,19 @@ cwbopendata:
         value: '84'
     - elementName: WDIR
       elementValue:
-        value: '10.0'
+        value: '360.0'
     - elementName: WDSD
       elementValue:
-        value: '1.1'
+        value: '1.6'
     - elementName: TEMP
       elementValue:
-        value: '25.2'
+        value: '25.1'
     - elementName: HUMD
       elementValue:
         value: '0.79'
     - elementName: PRES
       elementValue:
-        value: '1000.2'
+        value: '1000.4'
     - elementName: 24R
       elementValue:
         value: '0.0'
@@ -421,7 +421,7 @@ cwbopendata:
     locationName: 梧棲
     stationId: '467770'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -434,7 +434,7 @@ cwbopendata:
         value: '360.0'
     - elementName: WDSD
       elementValue:
-        value: '7.1'
+        value: '7.7'
     - elementName: TEMP
       elementValue:
         value: '23.9'
@@ -443,7 +443,7 @@ cwbopendata:
         value: '0.85'
     - elementName: PRES
       elementValue:
-        value: '1007.4'
+        value: '1007.7'
     - elementName: 24R
       elementValue:
         value: '0.0'
@@ -479,7 +479,7 @@ cwbopendata:
     locationName: 澎湖
     stationId: '467350'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -492,16 +492,16 @@ cwbopendata:
         value: '40.0'
     - elementName: WDSD
       elementValue:
-        value: '5.0'
+        value: '5.6'
     - elementName: TEMP
       elementValue:
-        value: '25.4'
+        value: '25.3'
     - elementName: HUMD
       elementValue:
-        value: '0.81'
+        value: '0.82'
     - elementName: PRES
       elementValue:
-        value: '1008.6'
+        value: '1008.9'
     - elementName: 24R
       elementValue:
         value: '9.5'
@@ -537,7 +537,7 @@ cwbopendata:
     locationName: 日月潭
     stationId: '467650'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -550,16 +550,16 @@ cwbopendata:
         value: '220.0'
     - elementName: WDSD
       elementValue:
-        value: '1.6'
+        value: '1.9'
     - elementName: TEMP
       elementValue:
-        value: '20.8'
+        value: '20.9'
     - elementName: HUMD
       elementValue:
-        value: '0.81'
+        value: '0.80'
     - elementName: PRES
       elementValue:
-        value: '900.5'
+        value: '900.6'
     - elementName: 24R
       elementValue:
         value: '0.0'
@@ -595,7 +595,7 @@ cwbopendata:
     locationName: 阿里山
     stationId: '467530'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -611,13 +611,13 @@ cwbopendata:
         value: '0.2'
     - elementName: TEMP
       elementValue:
-        value: '14.7'
+        value: '14.8'
     - elementName: HUMD
       elementValue:
         value: '0.94'
     - elementName: PRES
       elementValue:
-        value: '764.7'
+        value: '764.6'
     - elementName: 24R
       elementValue:
         value: '1.0'
@@ -653,7 +653,7 @@ cwbopendata:
     locationName: 玉山
     stationId: '467550'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -663,19 +663,19 @@ cwbopendata:
         value: '3845'
     - elementName: WDIR
       elementValue:
-        value: '230.0'
+        value: '160.0'
     - elementName: WDSD
       elementValue:
-        value: '0.3'
+        value: '1.1'
     - elementName: TEMP
       elementValue:
         value: '6.5'
     - elementName: HUMD
       elementValue:
-        value: '0.78'
+        value: '0.79'
     - elementName: PRES
       elementValue:
-        value: '644.6'
+        value: '644.7'
     - elementName: 24R
       elementValue:
         value: '5.0'
@@ -711,7 +711,7 @@ cwbopendata:
     locationName: 嘉義
     stationId: '467480'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -721,13 +721,13 @@ cwbopendata:
         value: '27'
     - elementName: WDIR
       elementValue:
-        value: '360.0'
+        value: '10.0'
     - elementName: WDSD
       elementValue:
-        value: '1.7'
+        value: '2.7'
     - elementName: TEMP
       elementValue:
-        value: '25.0'
+        value: '24.9'
     - elementName: HUMD
       elementValue:
         value: '0.83'
@@ -769,7 +769,7 @@ cwbopendata:
     locationName: 高雄
     stationId: '467440'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -782,16 +782,16 @@ cwbopendata:
         value: '320.0'
     - elementName: WDSD
       elementValue:
-        value: '1.3'
+        value: '1.7'
     - elementName: TEMP
       elementValue:
-        value: '27.9'
+        value: '27.8'
     - elementName: HUMD
       elementValue:
-        value: '0.80'
+        value: '0.81'
     - elementName: PRES
       elementValue:
-        value: '1008.7'
+        value: '1008.9'
     - elementName: 24R
       elementValue:
         value: '23.0'
@@ -827,7 +827,7 @@ cwbopendata:
     locationName: 恆春
     stationId: '467590'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -837,19 +837,19 @@ cwbopendata:
         value: '22'
     - elementName: WDIR
       elementValue:
-        value: '90.0'
+        value: '100.0'
     - elementName: WDSD
       elementValue:
-        value: '3.9'
+        value: '3.4'
     - elementName: TEMP
       elementValue:
-        value: '26.4'
+        value: '26.3'
     - elementName: HUMD
       elementValue:
         value: '0.85'
     - elementName: PRES
       elementValue:
-        value: '1007.3'
+        value: '1007.5'
     - elementName: 24R
       elementValue:
         value: '51.0'
@@ -885,7 +885,7 @@ cwbopendata:
     locationName: 宜蘭
     stationId: '467080'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -895,19 +895,19 @@ cwbopendata:
         value: '7'
     - elementName: WDIR
       elementValue:
-        value: '300.0'
+        value: '320.0'
     - elementName: WDSD
       elementValue:
-        value: '0.8'
+        value: '1.2'
     - elementName: TEMP
       elementValue:
-        value: '24.7'
+        value: '24.8'
     - elementName: HUMD
       elementValue:
         value: '0.94'
     - elementName: PRES
       elementValue:
-        value: '1009.7'
+        value: '1009.8'
     - elementName: 24R
       elementValue:
         value: '20.5'
@@ -943,7 +943,7 @@ cwbopendata:
     locationName: 蘇澳
     stationId: '467060'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -953,19 +953,19 @@ cwbopendata:
         value: '25'
     - elementName: WDIR
       elementValue:
-        value: '250.0'
+        value: '260.0'
     - elementName: WDSD
       elementValue:
-        value: '1.5'
+        value: '1.6'
     - elementName: TEMP
       elementValue:
-        value: '25.0'
+        value: '24.9'
     - elementName: HUMD
       elementValue:
-        value: '0.93'
+        value: '0.95'
     - elementName: PRES
       elementValue:
-        value: '1007.8'
+        value: '1007.9'
     - elementName: 24R
       elementValue:
         value: '13.0'
@@ -1001,7 +1001,7 @@ cwbopendata:
     locationName: 花蓮
     stationId: '466990'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1017,13 +1017,13 @@ cwbopendata:
         value: "-99.0"
     - elementName: TEMP
       elementValue:
-        value: '26.3'
+        value: '26.4'
     - elementName: HUMD
       elementValue:
-        value: '0.85'
+        value: '0.84'
     - elementName: PRES
       elementValue:
-        value: '1008.3'
+        value: '1008.4'
     - elementName: 24R
       elementValue:
         value: '0.0'
@@ -1059,7 +1059,7 @@ cwbopendata:
     locationName: 成功
     stationId: '467610'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1069,10 +1069,10 @@ cwbopendata:
         value: '34'
     - elementName: WDIR
       elementValue:
-        value: '350.0'
+        value: '340.0'
     - elementName: WDSD
       elementValue:
-        value: '1.4'
+        value: '1.6'
     - elementName: TEMP
       elementValue:
         value: '24.7'
@@ -1081,7 +1081,7 @@ cwbopendata:
         value: '0.88'
     - elementName: PRES
       elementValue:
-        value: '1006.2'
+        value: '1006.4'
     - elementName: 24R
       elementValue:
         value: '12.0'
@@ -1117,7 +1117,7 @@ cwbopendata:
     locationName: 臺東
     stationId: '467660'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1130,7 +1130,7 @@ cwbopendata:
         value: '360.0'
     - elementName: WDSD
       elementValue:
-        value: '1.0'
+        value: '0.8'
     - elementName: TEMP
       elementValue:
         value: '25.3'
@@ -1139,7 +1139,7 @@ cwbopendata:
         value: '0.95'
     - elementName: PRES
       elementValue:
-        value: '1009.7'
+        value: '1009.9'
     - elementName: 24R
       elementValue:
         value: '70.0'
@@ -1175,7 +1175,7 @@ cwbopendata:
     locationName: 大武
     stationId: '467540'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1185,22 +1185,22 @@ cwbopendata:
         value: '8'
     - elementName: WDIR
       elementValue:
-        value: '300.0'
+        value: '330.0'
     - elementName: WDSD
       elementValue:
-        value: '0.8'
+        value: '1.1'
     - elementName: TEMP
       elementValue:
-        value: '24.9'
+        value: '24.8'
     - elementName: HUMD
       elementValue:
         value: '0.94'
     - elementName: PRES
       elementValue:
-        value: '1009.5'
+        value: '1009.6'
     - elementName: 24R
       elementValue:
-        value: '79.5'
+        value: '80.0'
     - elementName: H_FX
       elementValue:
         value: '3.6'
@@ -1233,7 +1233,7 @@ cwbopendata:
     locationName: 蘭嶼
     stationId: '467620'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1246,10 +1246,10 @@ cwbopendata:
         value: '50.0'
     - elementName: WDSD
       elementValue:
-        value: '4.4'
+        value: '4.8'
     - elementName: TEMP
       elementValue:
-        value: '23.8'
+        value: '23.7'
     - elementName: HUMD
       elementValue:
         value: '0.95'
@@ -1291,7 +1291,7 @@ cwbopendata:
     locationName: 彭佳嶼
     stationId: '466950'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1304,7 +1304,7 @@ cwbopendata:
         value: '30.0'
     - elementName: WDSD
       elementValue:
-        value: '10.2'
+        value: '8.8'
     - elementName: TEMP
       elementValue:
         value: '23.0'
@@ -1349,7 +1349,7 @@ cwbopendata:
     locationName: 東吉島
     stationId: '467300'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1362,16 +1362,16 @@ cwbopendata:
         value: '40.0'
     - elementName: WDSD
       elementValue:
-        value: '12.5'
+        value: '11.8'
     - elementName: TEMP
       elementValue:
         value: '25.5'
     - elementName: HUMD
       elementValue:
-        value: '0.84'
+        value: '0.85'
     - elementName: PRES
       elementValue:
-        value: '1004.5'
+        value: '1004.6'
     - elementName: 24R
       elementValue:
         value: '12.5'
@@ -1407,7 +1407,7 @@ cwbopendata:
     locationName: 永康
     stationId: '467420'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1417,19 +1417,19 @@ cwbopendata:
         value: '8'
     - elementName: WDIR
       elementValue:
-        value: '10.0'
+        value: '20.0'
     - elementName: WDSD
       elementValue:
-        value: '3.4'
+        value: '3.3'
     - elementName: TEMP
       elementValue:
-        value: '25.4'
+        value: '25.3'
     - elementName: HUMD
       elementValue:
         value: '0.85'
     - elementName: PRES
       elementValue:
-        value: '1008.2'
+        value: '1008.3'
     - elementName: 24R
       elementValue:
         value: '9.0'
@@ -1465,7 +1465,7 @@ cwbopendata:
     locationName: 金門(合)
     stationId: A0W030
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1478,16 +1478,16 @@ cwbopendata:
         value: '30.0'
     - elementName: WDSD
       elementValue:
-        value: '5.4'
+        value: '5.8'
     - elementName: TEMP
       elementValue:
         value: '20.4'
     - elementName: HUMD
       elementValue:
-        value: '0.81'
+        value: '0.83'
     - elementName: PRES
       elementValue:
-        value: '1010.8'
+        value: '1010.9'
     - elementName: 24R
       elementValue:
         value: '34.0'
@@ -1523,29 +1523,29 @@ cwbopendata:
     locationName: 拉拉山
     stationId: A0C540
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
-        value: "-1"
+        value: '1'
     - elementName: ELEV
       elementValue:
         value: '1374'
     - elementName: WDIR
       elementValue:
-        value: '160.0'
+        value: '140.0'
     - elementName: WDSD
       elementValue:
-        value: '0.7'
+        value: '0.4'
     - elementName: TEMP
       elementValue:
         value: '18.2'
     - elementName: HUMD
       elementValue:
-        value: '0.99'
+        value: '0.97'
     - elementName: PRES
       elementValue:
-        value: '863.4'
+        value: '863.6'
     - elementName: 24R
       elementValue:
         value: '6.5'
@@ -1581,7 +1581,7 @@ cwbopendata:
     locationName: 武陵
     stationId: D2F230
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1603,7 +1603,7 @@ cwbopendata:
         value: '0.98'
     - elementName: PRES
       elementValue:
-        value: '828.0'
+        value: '828.1'
     - elementName: 24R
       elementValue:
         value: '0.0'
@@ -1639,7 +1639,7 @@ cwbopendata:
     locationName: 太魯閣
     stationId: A0T780
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1697,7 +1697,7 @@ cwbopendata:
     locationName: 新店
     stationId: A0A9M0
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1707,10 +1707,10 @@ cwbopendata:
         value: '24'
     - elementName: WDIR
       elementValue:
-        value: '270.0'
+        value: "-99.0"
     - elementName: WDSD
       elementValue:
-        value: '0.7'
+        value: '0.1'
     - elementName: TEMP
       elementValue:
         value: '22.8'
@@ -1755,7 +1755,7 @@ cwbopendata:
     locationName: 臺北
     stationId: '466920'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1768,16 +1768,16 @@ cwbopendata:
         value: '200.0'
     - elementName: WDSD
       elementValue:
-        value: '1.6'
+        value: '1.3'
     - elementName: TEMP
       elementValue:
-        value: '23.3'
+        value: '23.2'
     - elementName: HUMD
       elementValue:
-        value: '0.90'
+        value: '0.91'
     - elementName: PRES
       elementValue:
-        value: '1007.9'
+        value: '1008.0'
     - elementName: 24R
       elementValue:
         value: '6.5'
@@ -1813,7 +1813,7 @@ cwbopendata:
     locationName: 彰師大
     stationId: A0G720
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1823,19 +1823,19 @@ cwbopendata:
         value: '37'
     - elementName: WDIR
       elementValue:
-        value: '10.0'
+        value: '320.0'
     - elementName: WDSD
       elementValue:
-        value: '2.0'
+        value: '1.3'
     - elementName: TEMP
       elementValue:
-        value: '24.9'
+        value: '24.8'
     - elementName: HUMD
       elementValue:
-        value: '0.74'
+        value: '0.75'
     - elementName: PRES
       elementValue:
-        value: '1006.6'
+        value: '1006.7'
     - elementName: 24R
       elementValue:
         value: '0.0'
@@ -1871,7 +1871,7 @@ cwbopendata:
     locationName: 臺南
     stationId: '467410'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1884,13 +1884,13 @@ cwbopendata:
         value: '30.0'
     - elementName: WDSD
       elementValue:
-        value: '3.0'
+        value: '3.2'
     - elementName: TEMP
       elementValue:
-        value: '26.1'
+        value: '26.0'
     - elementName: HUMD
       elementValue:
-        value: '0.83'
+        value: '0.84'
     - elementName: PRES
       elementValue:
         value: '1006.9'
@@ -1929,7 +1929,7 @@ cwbopendata:
     locationName: 合歡山莊
     stationId: A0Z080
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -1939,13 +1939,13 @@ cwbopendata:
         value: '3171'
     - elementName: WDIR
       elementValue:
-        value: '260.0'
+        value: '240.0'
     - elementName: WDSD
       elementValue:
-        value: '0.5'
+        value: '0.4'
     - elementName: TEMP
       elementValue:
-        value: '9.4'
+        value: '9.3'
     - elementName: HUMD
       elementValue:
         value: '1.00'
@@ -1987,7 +1987,7 @@ cwbopendata:
     locationName: 吉貝
     stationId: A0W080
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -2000,16 +2000,16 @@ cwbopendata:
         value: '30.0'
     - elementName: WDSD
       elementValue:
-        value: '13.4'
+        value: '13.2'
     - elementName: TEMP
       elementValue:
-        value: '24.4'
+        value: '24.6'
     - elementName: HUMD
       elementValue:
         value: '0.80'
     - elementName: PRES
       elementValue:
-        value: '1009.0'
+        value: '1009.3'
     - elementName: 24R
       elementValue:
         value: '12.0'
@@ -2045,11 +2045,11 @@ cwbopendata:
     locationName: 東沙
     stationId: '468100'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
-        value: "-2"
+        value: "-3"
     - elementName: ELEV
       elementValue:
         value: '4'
@@ -2058,7 +2058,7 @@ cwbopendata:
         value: '310.0'
     - elementName: WDSD
       elementValue:
-        value: '5.2'
+        value: '4.6'
     - elementName: TEMP
       elementValue:
         value: '24.9'
@@ -2067,7 +2067,7 @@ cwbopendata:
         value: '1.00'
     - elementName: PRES
       elementValue:
-        value: '1005.6'
+        value: '1005.8'
     - elementName: 24R
       elementValue:
         value: '0.0'
@@ -2103,7 +2103,7 @@ cwbopendata:
     locationName: 金門
     stationId: '467110'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -2116,16 +2116,16 @@ cwbopendata:
         value: '40.0'
     - elementName: WDSD
       elementValue:
-        value: '5.4'
+        value: '5.8'
     - elementName: TEMP
       elementValue:
-        value: '19.8'
+        value: '19.9'
     - elementName: HUMD
       elementValue:
-        value: '0.92'
+        value: '0.91'
     - elementName: PRES
       elementValue:
-        value: '1009.3'
+        value: '1009.4'
     - elementName: 24R
       elementValue:
         value: '36.5'
@@ -2161,7 +2161,7 @@ cwbopendata:
     locationName: 馬祖
     stationId: '467990'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -2174,7 +2174,7 @@ cwbopendata:
         value: '20.0'
     - elementName: WDSD
       elementValue:
-        value: '5.5'
+        value: '5.3'
     - elementName: TEMP
       elementValue:
         value: '19.4'
@@ -2183,7 +2183,7 @@ cwbopendata:
         value: '0.83'
     - elementName: PRES
       elementValue:
-        value: '1004.3'
+        value: '1004.4'
     - elementName: 24R
       elementValue:
         value: '2.5'
@@ -2219,11 +2219,11 @@ cwbopendata:
     locationName: 麥寮
     stationId: A0K420
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
-        value: "-7"
+        value: "-9"
     - elementName: ELEV
       elementValue:
         value: '22'
@@ -2232,7 +2232,7 @@ cwbopendata:
         value: '40.0'
     - elementName: WDSD
       elementValue:
-        value: '9.0'
+        value: '9.4'
     - elementName: TEMP
       elementValue:
         value: '24.8'
@@ -2241,7 +2241,7 @@ cwbopendata:
         value: '0.94'
     - elementName: PRES
       elementValue:
-        value: '1007.4'
+        value: '1007.5'
     - elementName: 24R
       elementValue:
         value: '0.0'
@@ -2277,7 +2277,7 @@ cwbopendata:
     locationName: 新屋
     stationId: '467050'
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -2290,16 +2290,16 @@ cwbopendata:
         value: '40.0'
     - elementName: WDSD
       elementValue:
-        value: '8.4'
+        value: '7.1'
     - elementName: TEMP
       elementValue:
-        value: '23.0'
+        value: '23.1'
     - elementName: HUMD
       elementValue:
         value: '0.95'
     - elementName: PRES
       elementValue:
-        value: '1009.2'
+        value: '1009.3'
     - elementName: 24R
       elementValue:
         value: '13.0'
@@ -2335,7 +2335,7 @@ cwbopendata:
     locationName: 古坑
     stationId: C2K570
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -2345,10 +2345,10 @@ cwbopendata:
         value: '85'
     - elementName: WDIR
       elementValue:
-        value: "-99.0"
+        value: '20.0'
     - elementName: WDSD
       elementValue:
-        value: '1.4'
+        value: '1.2'
     - elementName: TEMP
       elementValue:
         value: '24.3'
@@ -2357,7 +2357,7 @@ cwbopendata:
         value: '0.99'
     - elementName: PRES
       elementValue:
-        value: '998.3'
+        value: '998.5'
     - elementName: 24R
       elementValue:
         value: '0.0'
@@ -2393,7 +2393,7 @@ cwbopendata:
     locationName: 九宮碼頭
     stationId: C0W100
     time:
-      obsTime: '2016-10-10T19:20:00+08:00'
+      obsTime: '2016-10-10T19:30:00+08:00'
     weatherElement:
     - elementName: TIME
       elementValue:
@@ -2406,16 +2406,16 @@ cwbopendata:
         value: '20.0'
     - elementName: WDSD
       elementValue:
-        value: '8.3'
+        value: '9.2'
     - elementName: TEMP
       elementValue:
-        value: '21.2'
+        value: '21.3'
     - elementName: HUMD
       elementValue:
-        value: '0.89'
+        value: '0.87'
     - elementName: PRES
       elementValue:
-        value: '1011.2'
+        value: '1011.3'
     - elementName: 24R
       elementValue:
         value: '10.0'

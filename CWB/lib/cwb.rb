@@ -31,10 +31,10 @@ module CWB
 
     cwbhash = Hash.new
     cwbhash = Hash.from_xml(file)
-    
+
     yaml = cwbhash.to_yaml
 
-    cwbhash.each {|key| puts key}
+    cwbhash.each {|key| puts '#{key} SET' } 
     File.open('cwb.yam', 'w'){|file| file.write(yaml)}
 
   end
