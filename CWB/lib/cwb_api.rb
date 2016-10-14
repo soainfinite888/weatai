@@ -7,14 +7,16 @@ module CWB
   class CWBApi
     URL = 'http://opendata.cwb.gov.tw/opendataapi'
 
-    def initialize(authorizationkey)
-        @authorizationkey = authorizationkey
+    def initialize(data_id)
+        @data_id = data_id
+        credentials = YAML.load(File.read('../config/credentials.yml'))
+        @authorizationkey = credentials[:key]
     end
 
-    def info(data_id)
+    def raw_info()
       info_response = 
         HTTP.get(URL,
-                params: { dataid: data_id,
+                params: { dataid: @data_id,
                 authorizationkey: credentials[:key] })
       Hash.from_xml(info_response)
     end
