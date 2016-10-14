@@ -2,8 +2,7 @@ require 'minitest/autorun'
 require 'minitest/rg'
 require 'yaml'
 require 'active_support/all'
-
-#require_relative '../lib/cwb.rb'
+require_relative '../lib/cwb.rb'
 
 CWB_RESPONSE = YAML.load(File.read('./fixtures/data.yml'))
 
