@@ -1,40 +1,22 @@
-require 'http'
-require 'active_support/core_ext/hash/conversions'
+require 'active_support/all'
+require 'active_support/core_ext/hash'
 require 'yaml'
+require 'http'
 
 module CWB
-  
   class CWBApi
-    CWB_URL = 'http://opendata.cwb.gov.tw/'
-    dataid = "O-A0003-001"
-    apikey = "CWB-6D14390B-86D8-444E-80B1-E35B712C5DE0"
-    CWB_API_URL = "http://opendata.cwb.gov.tw/opendataapi?dataid=#{dataid}&authorizationkey=#{apikey}"
+    URL = 'http://opendata.cwb.gov.tw/opendataapi'
 
-
-    def initialize(dataid:, apikey:)
-      access_token_response =
-        HTTP.get(CWB_API_URL,
-                 params: { dataid: dataid,
-                           apikey: apikey,})
-
-
-      @access_token = XMl.load(access_token_response.to_s)['access_token']
+    def initialize(authorizationkey)
+        @authorizationkey = authorizationkey
     end
 
-    file = File.open("data/mconvert.xml", "r")
-    hash = Hash.from_xml(file.read)
-    yaml = hash.to_yaml
-    File.open("data/mirador.yml", "w") { |file| file.write(yaml) }
-
-    
-
-
-
-    private
-
-    def cwb_resource_url(dataid)
-      #{}"http://opendata.cwb.gov.tw/opendataapi?dataid=#{dataid}&authorizationkey=#{apikey}"
-      #URI.join(FB_API_URL, "/#{id}/")
+    def info(data_id)
+      info_response = 
+        HTTP.get(URL,
+                params: { dataid: data_id,
+                authorizationkey: credentials[:key] })
+      Hash.from_xml(info_response)
     end
   end
 end
