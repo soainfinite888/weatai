@@ -1,3 +1,4 @@
+require 'cwb_api'
 require 'active_support/all'
 require 'active_support/core_ext/hash'
 require 'yaml'

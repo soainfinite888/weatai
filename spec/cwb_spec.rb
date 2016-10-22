@@ -1,25 +1,15 @@
 require_relative 'spec_helper.rb'
-require 'minitest/autorun'
-require 'minitest/rg'
 require 'yaml'
-require 'active_support/all'
-require_relative '../lib/cwb.rb'
-require_relative 'spec_helper.rb'
-
-
-
-#CWB_RESPONSE = YAML.load(File.read('./fixtures/data.yml'))
-
-WeatherStations = ['基隆','淡水','板橋','竹子湖','鞍部','新竹','臺中','澎湖',
-                   '日月潭','阿里山','玉山','嘉義','高雄','恆春','宜蘭','蘇澳',
-                   '花蓮','成功','臺東','大武','蘭嶼','彭佳嶼','東吉島','永康',
-                   '金門(合)','拉拉山','武陵','太魯閣','新店','臺北','彰師大',
-                   '臺南','合歡山莊','吉貝','東沙','金門','馬祖','麥寮','新屋',
-                   '古坑','九宮碼頭']
-
-WeatherStationsAmount = 41 
 
 describe 'CWB specifications' do
+
+
+  before do
+    @cwb_api = CWB::CWBApi.new(
+      data_id: CREDENTIALS[:key],
+    )
+
+  end
   
   #test 01
   it 'should be able to download the data file(a hash data)' do
@@ -66,5 +56,33 @@ describe 'CWB specifications' do
     end
 
   end
+
+  # test 05
+  it 'should be able to get raw info' do
+    testCWBApi = @cwb_api
+    testCWBApi.raw_info.wont_be_empty
+  end
+
+  # test 06
+  it 'should be able to get instant_weather' do
+    testWeather = CWB::Weather.new(
+      @cwb_api
+    )
+    #testWeather.instant_weather.wont_be_empty
+  end
+
+  # test 07
+  it 'should be able to be test(cwb_api)' do
+    testCWBApi = @cwb_api
+    testCWBApi.test_info.must_equal 'test_info_yes'
+  end
+
+  # test 08
+  it 'should be able to be test(cwb)' do
+    testWeather= CWB::Weather.new(
+      @cwb_api
+    )
+  end
+
 
 end

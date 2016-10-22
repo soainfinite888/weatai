@@ -11,6 +11,7 @@ module CWB
       @data_id = data_id
       credentials = YAML.load(File.read('../config/credentials.yml'))
       @authorizationkey = credentials[:key]
+      @key = @authorizationkey
     end
 
     def raw_info
@@ -18,7 +19,13 @@ module CWB
         HTTP.get(URL,
                  params: { dataid: @data_id,
                            authorizationkey: @authorizationkey })
-      Hash.from_xml(info_response)
+      
+      return info_response.to_s
     end
+
+    def test_info
+      return 'test_info_yes'
+    end
+
   end
 end
