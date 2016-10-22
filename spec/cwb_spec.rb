@@ -1,10 +1,14 @@
+require_relative 'spec_helper.rb'
 require 'minitest/autorun'
 require 'minitest/rg'
 require 'yaml'
 require 'active_support/all'
 require_relative '../lib/cwb.rb'
+require_relative 'spec_helper.rb'
 
-CWB_RESPONSE = YAML.load(File.read('./fixtures/data.yml'))
+
+
+#CWB_RESPONSE = YAML.load(File.read('./fixtures/data.yml'))
 
 WeatherStations = ['基隆','淡水','板橋','竹子湖','鞍部','新竹','臺中','澎湖',
                    '日月潭','阿里山','玉山','嘉義','高雄','恆春','宜蘭','蘇澳',
