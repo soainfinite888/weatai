@@ -17,7 +17,7 @@ module CWB
       info_response =
         HTTP.get(URL,
                  params: { dataid: @data_id,
-                           authorizationkey: credentials[:key] })
+                           authorizationkey: @authorizationkey })
       Hash.from_xml(info_response)
     end
   end
