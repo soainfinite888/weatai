@@ -3,12 +3,22 @@ require 'yaml'
 
 describe 'CWB specifications' do
 
+  VCR.configure do |c|
+    c.cassette_library_dir = 'cassettes'
+    c.hook_into :webmock
+
+    c.filter_sensitive_data('<KEY>') { CREDENTIALS[:key] }
+  end
 
   before do
-    @cwb_api = CWB::CWBApi.new(
-      data_id: CREDENTIALS[:key],
-    )
+    VCR.insert_cassette 'all_record', record: :new_episodes
 
+    @cwb_api = CWB::CWBApi.new('O-A0001-001')
+
+  end
+
+  after do
+    VCR.eject_cassette
   end
   
   #test 01
