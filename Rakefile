@@ -3,11 +3,6 @@ task :spec do
   sh 'ruby spec/cwb_spec.rb' 
 end
 
-desc 'run tests' 
-task :spec do 
-  sh 'ruby spec/cwb_spec.rb' 
-end
-
 namespace :quality do 
   desc 'run all quality checks' 
   task all: [:rubocop, :flog, :flay]
