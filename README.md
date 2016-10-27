@@ -13,9 +13,10 @@ For ad hoc installation from command line:
 
 ```$ gem install weatai```
 
-## Setup Facebook Credentials
+## Setup Central Weather Bureau(Taiwan) Credentials
 
-Please setup your Facebook developer credentials by creating an app profile on Facebook Developer: https://developers.facebook.com – you should get a "client ID" and "client secret".
+Please setup your Central Weather Bureau credentials by creating an account on Central Weather Bureau Website: http://www.cwb.gov.tw – creating an CWB member account
+and go to :http://opendata.cwb.gov.tw - login by CWB member account and get credentials (資料使用說明->取得驗證碼)
 
 ## Usage
 
