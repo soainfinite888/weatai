@@ -25,8 +25,7 @@ module CWB
     end
 
     def self.find(cwb_api)
-      raw_data = cwb_api.raw_info 
       new(cwb_api)
-    end 
+    end
   end
 end

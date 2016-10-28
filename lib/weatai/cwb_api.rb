@@ -21,10 +21,5 @@ module CWB
                            authorizationkey: @authorizationkey })
       Hash.from_xml(info_response)
     end
-
-    def test_info
-      return 'test_info_yes'
-    end
-
   end
 end
