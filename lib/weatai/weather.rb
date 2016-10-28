@@ -3,7 +3,7 @@ require 'active_support/core_ext/hash'
 require 'yaml'
 require 'http'
 
-credentials = YAML.load(File.read('../config/credentials.yml'))
+credentials = YAML.load(File.read('config/credentials.yml'))
 file = HTTP.get('http://opendata.cwb.gov.tw/opendataapi',
                 params: { dataid: 'O-A0003-001',
                           authorizationkey: credentials[:key] })
@@ -19,4 +19,4 @@ hash['cwbopendata']['location'].each do |item|
   location['HUMD'] = item['weatherElement'][5]['elementValue']['value']
   all_location.store(place, location)
 end
-File.write('../spec/fixtures/data.yml', all_location.to_yaml)
+File.write('spec/fixtures/data.yml', all_location.to_yaml)

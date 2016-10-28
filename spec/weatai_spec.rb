@@ -78,7 +78,7 @@ describe 'CWB specifications' do
     testWeather = CWB::Weather.new(
       @cwb_api
     )
-    #testWeather.instant_weather.wont_be_empty
+    testWeather.instant_weather
   end
 
   # test 07

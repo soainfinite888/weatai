@@ -1,6 +1,6 @@
 desc 'run tests' 
 task :spec do 
-  sh 'ruby spec/cwb_spec.rb' 
+  sh 'ruby spec/weatai_spec.rb' 
 end
 
 namespace :quality do 

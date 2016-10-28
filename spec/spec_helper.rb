@@ -1,8 +1,8 @@
 require 'simplecov'
 SimpleCov.start
 
-require_relative '../lib/cwb.rb'
-require_relative '../lib/cwb_api.rb'
+require_relative '../lib/weatai/cwb.rb'
+require_relative '../lib/weatai/cwb_api.rb'
 
 require 'minitest/autorun'
 require 'minitest/rg'
@@ -13,10 +13,6 @@ require 'http'
 require 'vcr'
 require 'webmock'
 
-#puts Dir.pwd
-#CWB_RESPONSE = YAML.load(File.read('./fixtures/data.yml'))
-#<<<<<<< Updated upstream
-CWB_RESPONSE = YAML.load(File.read('spec/fixtures/data.yml'))
 CREDENTIALS = YAML.load(File.read('config/credentials.yml'))
 #=======
 #File.read('./fixtures/data.yml')

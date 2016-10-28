@@ -19,8 +19,7 @@ module CWB
         HTTP.get(URL,
                  params: { dataid: @data_id,
                            authorizationkey: @authorizationkey })
-      
-      return info_response.to_s
+      Hash.from_xml(info_response)
     end
 
     def test_info
