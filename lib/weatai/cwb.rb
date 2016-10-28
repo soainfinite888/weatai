@@ -27,11 +27,6 @@ module CWB
     def self.find(cwb_api)
       raw_data = cwb_api.raw_info 
       new(cwb_api)
-
-    def weather_test
-      return 'weather_test_yes'
-    end  
-
     end 
   end
 end
