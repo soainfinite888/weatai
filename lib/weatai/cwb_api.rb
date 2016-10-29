@@ -13,11 +13,11 @@ module CWB
     
     def self.config
       return @config if @config
-      @config = { dataid: ENV['DATA_ID' ],
+      @config = { dataid: ENV['DATA_ID'],
                   key:    ENV['AUTH_KEY'] }
     end
 
-    def self.raw_info
+    def self.raw_info(dataid)
       info_response =
         HTTP.get(URL,
                  params: { dataid:           config[:dataid],
@@ -26,3 +26,11 @@ module CWB
     end
   end
 end
+
+#class Tester
+#  include CWB
+#end
+
+#t = Tester::CWBApi.config
+#s = Tester::CWBApi.raw_info('O-A0003-001')
+#puts s

@@ -2,13 +2,15 @@ require_relative 'cwb_api'
 module CWB
   # Class to organize raw_data, finding the data we need
   class Weather
-    def initialize(cwb_api)
-      @cwb_api = cwb_api
+    attr_reader :dataid
+
+    def initialize(data:)
+      @dataid = data['dataid']
     end
 
     def instant_weather
       return @instant_weather if @instant_weather
-      raw_info = CWB::CWBApi.raw_info
+      raw_info = CWB::CWBApi.raw_info(@dataid)
       all_location = {}
       raw_info['cwbopendata']['location'].each do |item|
         location = {}
@@ -24,8 +26,9 @@ module CWB
       all_location
     end
 
-    def self.find(cwb_api) 
-      new(cwb_api)
+    def self.find(dataid:)
+      raw_data = CWB::CWBApi.raw_info(dataid) 
+      new(data: raw_data)
     end
 
     def weather_test
@@ -33,3 +36,12 @@ module CWB
     end 
   end
 end
+
+#class Tester
+#  include CWB
+#end
+
+#t = Tester::Weather.new(Tester::CWBApi.config)
+#t.instant_weather
+#k = Tester::Weather.find(dataid:'O-A0003-001')
+#k.instant_weather
