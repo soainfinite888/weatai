@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), *%w(.. lib))
+require 'weatai'
+
+dataid = ARGV[0] || ENV['DATA_ID']
+unless dataid
+  puts 'USAGE: weatai [dataid]'
+  exit(1)
+end
+
+weather = CWB::Weather.find(dataid: dataid)
+puts 'dataid: '+weather.dataid
