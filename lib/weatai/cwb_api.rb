@@ -6,19 +6,22 @@ module CWB
   # Service for all weather API calls
   class CWBApi
     URL = 'http://opendata.cwb.gov.tw/opendataapi'
-
-    def initialize(data_id)
-      @data_id = data_id
-      credentials = YAML.load(File.read('config/credentials.yml'))
-      @authorizationkey = credentials[:key]
-      @key = @authorizationkey
+    
+    def self.config(credentials)
+      @config ? @config.update(credentials) : @config = credentials
+    end
+    
+    def self.config
+      return @config if @config
+      @config = { dataid: ENV['DATA_ID' ],
+                  key:    ENV['AUTH_KEY'] }
     end
 
-    def raw_info
+    def self.raw_info
       info_response =
         HTTP.get(URL,
-                 params: { dataid: @data_id,
-                           authorizationkey: @authorizationkey })
+                 params: { dataid:           config[:dataid],
+                           authorizationkey: config[:key]})
       Hash.from_xml(info_response)
     end
   end

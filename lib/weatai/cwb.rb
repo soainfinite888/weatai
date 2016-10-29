@@ -8,7 +8,7 @@ module CWB
 
     def instant_weather
       return @instant_weather if @instant_weather
-      raw_info = @cwb_api.raw_info
+      raw_info = CWB::CWBApi.raw_info
       all_location = {}
       raw_info['cwbopendata']['location'].each do |item|
         location = {}
@@ -20,12 +20,16 @@ module CWB
         location['HUMD'] = item['weatherElement'][5]['elementValue']['value']
         all_location.store(place, location)
       end
-      File.write('spec/fixtures/data.yml', all_location.to_yaml)
+      File.write('../../spec/fixtures/data.yml', all_location.to_yaml)
       all_location
     end
 
-    def self.find(cwb_api)
+    def self.find(cwb_api) 
       new(cwb_api)
     end
+
+    def weather_test
+      return 'weather_test_yes'
+    end 
   end
 end
