@@ -26,11 +26,3 @@ module CWB
     end
   end
 end
-
-#class Tester
-#  include CWB
-#end
-
-#t = Tester::CWBApi.config
-#s = Tester::CWBApi.raw_info('O-A0003-001')
-#puts s

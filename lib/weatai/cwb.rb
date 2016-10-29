@@ -22,7 +22,7 @@ module CWB
         location['HUMD'] = item['weatherElement'][5]['elementValue']['value']
         all_location.store(place, location)
       end
-      File.write('../../spec/fixtures/data.yml', all_location.to_yaml)
+      # File.write('../../spec/fixtures/data.yml', all_location.to_yaml)
       all_location
     end
 
@@ -36,12 +36,3 @@ module CWB
     end 
   end
 end
-
-#class Tester
-#  include CWB
-#end
-
-#t = Tester::Weather.new(Tester::CWBApi.config)
-#t.instant_weather
-#k = Tester::Weather.find(dataid:'O-A0003-001')
-#k.instant_weather
