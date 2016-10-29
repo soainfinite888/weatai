@@ -11,3 +11,5 @@ end
 
 weather = CWB::Weather.find(dataid: dataid)
 puts 'dataid: '+weather.dataid
+raw_data = weather.instant_weather
+puts raw_data
