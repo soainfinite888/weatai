@@ -9,7 +9,13 @@ unless dataid
   exit(1)
 end
 
+key = ENV['AUTH_KEY']
+unless key
+  puts 'USAGE: weatai [key]'
+  exit(1)
+end
+
 weather = CWB::Weather.find(dataid: dataid)
-puts 'dataid: '+weather.dataid
 raw_data = weather.instant_weather
 puts raw_data
+File.write('../spec/fixtures/data.yml', raw_data.to_yaml)
