@@ -13,8 +13,13 @@ require 'http'
 require 'vcr'
 require 'webmock'
 
+
 CWB_RESPONSE = YAML.load(File.read('spec/fixtures/data.yml'))
-CREDENTIALS = YAML.load(File.read('config/credentials.yml'))
+if File.file?('config/credentials.yml')
+  CREDENTIALS = YAML.load(File.read('config/credentials.yml'))
+  ENV['AUTH_KEY'] = credentials[:key]
+end
+
 WeatherStations = ['基隆','淡水','板橋','竹子湖','鞍部','新竹','臺中','澎湖',
                    '日月潭','阿里山','玉山','嘉義','高雄','恆春','宜蘭','蘇澳',
                    '花蓮','成功','臺東','大武','蘭嶼','彭佳嶼','東吉島','永康',
