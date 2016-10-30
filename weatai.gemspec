@@ -1,21 +1,22 @@
 # frozen_string_literal: true
 $LOAD_PATH.push File.expand_path('../lib', __FILE__)
-require 'facegroup/version'
+require 'weatai/version'
 
 Gem::Specification.new do |s|
   s.name        =  'weatai'
   s.version     =  weatai::VERSION
 
   s.summary     =  'Get weather content from central weather bureau(Taiwan);'
-  s.description =  'Extracts feed, postings, and attachments from FB Groups'
+  s.description =  'Extracts temperature and humidity for different city'
   s.authors     =  ['soainfinite888']
   s.email       =  ['soumya.ray@gmail.com']
 
   s.files       =  `git ls-files`.split("\n")
   s.test_files  =  `git ls-files -- spec/*`.split("\n")
-  s.executables << 'facegroup'
+  s.executables << 'weatai'
 
   s.add_runtime_dependency 'http', '~> 2.0'
+  s.add_runtime_dependency 'activesupport ', '~> 5.0'
 
   s.add_development_dependency 'minitest', '~> 5.9'
   s.add_development_dependency 'minitest-rg', '~> 5.2'
@@ -27,6 +28,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'flay', '~> 2.8'
   s.add_development_dependency 'rubocop', '~> 0.42'
 
-  s.homepage    =  'https://github.com/'
+  s.homepage    =  'https://github.com/soainfinite888/weatai'
   s.license     =  'MIT'
 end
