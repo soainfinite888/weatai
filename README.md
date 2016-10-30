@@ -22,36 +22,13 @@ and go to :http://opendata.cwb.gov.tw - login by CWB member account and get cred
 
 Require weatai gem in your code: `require 'weatai'`
 
-Supply your Facebook credentials to our library in one of two ways:
+Supply your CWB credentials to our library in one of two ways:
 - Setup environment variables: `ENV[FB_CLIENT_ID]` and `ENV[FB_CLIENT_SECRET]`
 - or, provide them directly to weatai:
 
 ```
-weatai::FbApi.config = { client_id: ENV['FB_CLIENT_ID'],
-                            client_secret: ENV['FB_CLIENT_SECRET'] }
+weatai::Config = { dataid: ENV['DATA_ID'],
+                   key: ENV['KEY'] }
 ```
 
 See the following example code for more usage details:
-
-```ruby
-# Access the group
-group = weatai::Group.find(
-  id: ENV['FB_GROUP_ID']
-)
-
-puts group.name
-
-feed = group.feed
-
-puts feed.count
-
-group.feed.postings.each do |posting|
-  puts posting.id
-  puts posting.created_time
-  puts posting.message
-  if posting.attachment
-    puts posting.attachment.description
-    puts posting.attachment.url
-  end
-end
-```
