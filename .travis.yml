@@ -7,3 +7,6 @@ branches:
   only:
     - master
 script: bundle exec rake spec
+env:
+  -DATA_ID=O-A0003-001
+  -AUTH_KEY=CWB-88ABAD26-6BC8-497A-80E2-2A159654CBF6

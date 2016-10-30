@@ -17,8 +17,8 @@ require 'webmock'
 CWB_RESPONSE = YAML.load(File.read('spec/fixtures/data.yml'))
 if File.file?('config/credentials.yml')
   CREDENTIALS = YAML.load(File.read('config/credentials.yml'))
-  ENV['AUTH_KEY'] = credentials[:key]
-  ENV['DATA_ID'] = credentials[:dataid]
+  ENV['AUTH_KEY'] = CREDENTIALS[:key]
+  ENV['DATA_ID'] = CREDENTIALS[:dataid]
 end
 
 WeatherStations = ['基隆','淡水','板橋','竹子湖','鞍部','新竹','臺中','澎湖',

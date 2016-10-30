@@ -12,7 +12,7 @@ describe 'CWB specifications' do
 
   before do
     VCR.insert_cassette 'all_record', record: :new_episodes
-    @cwb_api = CWB::CWBApi.new('O-A0001-001')
+    @cwb_api = CWB::CWBApi.config
 
   end
 

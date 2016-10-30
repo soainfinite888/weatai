@@ -1,7 +1,7 @@
 # weatai Gem
 
 [![Gem Version](https://badge.fury.io/rb/weatai.svg)](https://badge.fury.io/rb/weatai)
-[![Build Status](https://travis-ci.org/ISS-SOA/weatai.svg?branch=master)](https://travis-ci.org/ISS-SOA/weatai)
+[![Build Status](https://travis-ci.org/soainfinite888/weatai.svg?branch=master)](https://travis-ci.org/ISS-SOA/weatai)
 
 weatai is a gem that specializes in getting data from Central Weather Bureau(Taiwan).
 
