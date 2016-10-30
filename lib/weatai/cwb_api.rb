@@ -13,8 +13,9 @@ module CWB
     
     def self.config
       return @config if @config
-      @config = { dataid: ENV['DATA_ID'],
-                  key:    ENV['AUTH_KEY'] }
+      @cinfig = Config.new(ENV)
+      #@config = { dataid: ENV['DATA_ID'],
+      #            key:    ENV['AUTH_KEY'] }
     end
 
     def self.raw_info(dataid)
