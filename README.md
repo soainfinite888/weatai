@@ -23,7 +23,7 @@ and go to :http://opendata.cwb.gov.tw - login by CWB member account and get cred
 Require weatai gem in your code: `require 'weatai'`
 
 Supply your CWB credentials to our library in one of two ways:
-- Setup environment variables: `ENV[FB_CLIENT_ID]` and `ENV[FB_CLIENT_SECRET]`
+- Setup environment variables: `ENV['DATA_ID']` and `ENV['KEY']`
 - or, provide them directly to weatai:
 
 ```
