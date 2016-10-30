@@ -4,12 +4,12 @@ require 'weatai/version'
 
 Gem::Specification.new do |s|
   s.name        =  'weatai'
-  s.version     =  weatai::VERSION
+  s.version     =  CWB::VERSION
 
   s.summary     =  'Get weather content from central weather bureau(Taiwan);'
   s.description =  'Extracts temperature and humidity for different city'
   s.authors     =  ['soainfinite888']
-  s.email       =  ['soumya.ray@gmail.com']
+  s.email       =  ['wer321011@gmail.com']
 
   s.files       =  `git ls-files`.split("\n")
   s.test_files  =  `git ls-files -- spec/*`.split("\n")
