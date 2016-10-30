@@ -12,7 +12,7 @@ describe 'CWB specifications' do
 
   before do
     VCR.insert_cassette 'all_record', record: :new_episodes
-    @cwb_api = CWB::CWBApi.config
+#    @cwb_api = CWB::CWBApi.config
 
   end
 
@@ -23,8 +23,11 @@ describe 'CWB specifications' do
 
  # test 01
   it 'should be able to get raw info' do
-    testCWBApi = @cwb_api
-    testCWBApi.raw_info.wont_be_empty
+#    testCWBApi = @cwb_api
+#    testCWBApi.raw_info.wont_be_emptypi
+    testCWB = CWB::Weather.find(dataid: 'O-A0003-001')
+    testCWBA.instant_weather.wont_be_empty
+
   end
 
   #test 02

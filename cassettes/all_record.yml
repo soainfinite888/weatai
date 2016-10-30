@@ -15952,4 +15952,37 @@ http_interactions:
         L3BhcmFtZXRlcj4KIDwvbG9jYXRpb24+CjwvY3dib3BlbmRhdGE+Cg==
     http_version: 
   recorded_at: Fri, 28 Oct 2016 02:31:01 GMT
+- request:
+    method: get
+    uri: http://opendata.cwb.gov.tw/opendataapi?authorizationkey=<KEY>&dataid=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - opendata.cwb.gov.tw
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=6B4665431B366CD3E2408810371590FE; Path=/; HttpOnly
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '71'
+      Date:
+      - Sun, 30 Oct 2016 13:11:32 GMT
+    body:
+      encoding: UTF-8
+      string: "{\"message\":\"Invalid_argument format\",\"status\":\"Fail\",\"code\":\"A-0100\"}\r\n"
+    http_version: 
+  recorded_at: Sun, 30 Oct 2016 13:11:33 GMT
 recorded_with: VCR 3.0.3
