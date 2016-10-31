@@ -1,3 +1,5 @@
 coverage/
 config/
 cassettes/
+*.gem
+Gemfile.lock
