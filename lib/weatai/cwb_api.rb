@@ -7,7 +7,7 @@ module CWB
   class CWBApi
     URL = 'http://opendata.cwb.gov.tw/opendataapi'
     
-    def self.config(credentials)
+    def self.config=(credentials)
       @config ? @config.update(credentials) : @config = credentials
     end
     

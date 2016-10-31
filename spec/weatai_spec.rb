@@ -7,7 +7,7 @@ describe 'CWB specifications' do
     c.cassette_library_dir = 'cassettes'
     c.hook_into :webmock
 
-    c.filter_sensitive_data('<KEY>') { CREDENTIALS[:key] }
+#    c.filter_sensitive_data('<KEY>') { CREDENTIALS[:key] }
   end
 
   before do
@@ -20,16 +20,12 @@ describe 'CWB specifications' do
     VCR.eject_cassette
   end
 
-
  # test 01
   it 'should be able to get raw info' do
-#    testCWBApi = @cwb_api
-#    testCWBApi.raw_info.wont_be_emptypi
-    testCWB = CWB::Weather.find(dataid: 'O-A0003-001')
-    testCWBA.instant_weather.wont_be_empty
-
+#    CWB::CWBApi.config
+    CWB::CWBApi.raw_info('O-A0003-001').wont_be_empty
   end
-
+=begin
   #test 02
   it 'should be able to download the data file in hash format)' do
     CWB_RESPONSE.kind_of?(Hash).must_equal true 
@@ -43,7 +39,7 @@ describe 'CWB specifications' do
     )
     testWeather.instant_weather.kind_of?(Hash).must_equal true 
   end
-=begin
+
   #test 04
   it 'should get name of every Weather Stations' do
     testWeather = CWB::Weather.new(
