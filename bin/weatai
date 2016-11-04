@@ -18,4 +18,4 @@ end
 weather = CWB::Weather.find(dataid: dataid)
 raw_data = weather.instant_weather
 puts raw_data
-File.write('../spec/fixtures/data.yml', raw_data.to_yaml)
+File.write('data.yml', raw_data.to_yaml)
