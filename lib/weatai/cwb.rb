@@ -22,7 +22,7 @@ module CWB
         location['HUMD'] = item['weatherElement'][5]['elementValue']['value']
         all_location.store(place, location)
       end
-      # File.write('../../spec/fixtures/data.yml', all_location.to_yaml)
+      # File.write('spec/fixtures/data.yml', all_location.to_yaml)
       all_location
     end
 
