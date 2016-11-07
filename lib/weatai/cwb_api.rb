@@ -13,14 +13,13 @@ module CWB
     
     def self.config
       return @config if @config
-      @config = { dataid: ENV['DATA_ID'],
-                  key:    ENV['AUTH_KEY'] }
+      @config = {key:    ENV['AUTH_KEY'] }
     end
 
-    def self.raw_info(dataid)
+    def self.raw_info(id)
       info_response =
         HTTP.get(URL,
-                 params: { dataid:           config[:dataid],
+                 params: { dataid:           id,
                            authorizationkey: config[:key]})
       Hash.from_xml(info_response)
     end

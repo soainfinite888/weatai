@@ -4,8 +4,8 @@ module CWB
   class Weather
     attr_reader :dataid
 
-    def initialize(data:)
-      @dataid = data['dataid']
+    def initialize(dataid:)
+      @dataid = dataid
     end
 
     def instant_weather
@@ -22,13 +22,11 @@ module CWB
         location['HUMD'] = item['weatherElement'][5]['elementValue']['value']
         all_location.store(place, location)
       end
-      # File.write('spec/fixtures/data.yml', all_location.to_yaml)
       all_location
     end
 
     def self.find(dataid:)
-      raw_data = CWB::CWBApi.raw_info(dataid) 
-      new(data: raw_data)
+       new(dataid: dataid)
     end
 
     def weather_test
