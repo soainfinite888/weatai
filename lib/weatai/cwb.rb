@@ -8,10 +8,9 @@ module CWB
       @dataid = dataid
     end
 
-    def instant_weather
-      return @instant_weather if @instant_weather
-      raw_info = CWB::CWBApi.raw_info(@dataid)
-      all_location = {}
+    def self.instant_weather
+      raw_info = CWB::CWBApi.raw_info1(@dataid)
+      all_location1 = {}
       raw_info['cwbopendata']['location'].each do |item|
         location = {}
         place = item['locationName']
@@ -20,13 +19,9 @@ module CWB
         location['town'] = item['parameter'][2]['parameterValue']
         location['TEMP'] = item['weatherElement'][4]['elementValue']['value']
         location['HUMD'] = item['weatherElement'][5]['elementValue']['value']
-        all_location.store(place, location)
+        all_location1.store(place, location)
       end
-      all_location
-    end
-
-    def self.find(dataid:)
-       new(dataid: dataid)
+      all_location1
     end
 
     def weather_test
