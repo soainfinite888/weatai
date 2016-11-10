@@ -3,9 +3,15 @@
 $LOAD_PATH.unshift File.join(File.dirname(__FILE__), *%w(.. lib))
 require 'weatai'
 
-dataid = ARGV[0] || ENV['DATA_ID']
-unless dataid
-  puts 'USAGE: weatai [dataid]'
+dataid1 = ARGV[0] || ENV['DATA_ID1']
+unless dataid1
+  puts 'USAGE: weatai [dataid1]'
+  exit(1)
+end
+
+dataid2 = ARGV[0] || ENV['DATA_ID2']
+unless dataid1
+  puts 'USAGE: weatai [dataid2]'
   exit(1)
 end
 
@@ -15,7 +21,6 @@ unless key
   exit(1)
 end
 
-weather = CWB::Weather.find(dataid: dataid)
-raw_data = weather.instant_weather
-puts raw_data
-File.write('data.yml', raw_data.to_yaml)
+weather = CWB::INSTANT.instant
+puts weather.to_yaml
+File.write('data.yml', weather.to_yaml)
