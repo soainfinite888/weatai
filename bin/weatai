@@ -9,12 +9,6 @@ unless dataid1
   exit(1)
 end
 
-dataid2 = ARGV[0] || ENV['DATA_ID2']
-unless dataid1
-  puts 'USAGE: weatai [dataid2]'
-  exit(1)
-end
-
 key = ENV['AUTH_KEY']
 unless key
   puts 'USAGE: weatai [key]'
