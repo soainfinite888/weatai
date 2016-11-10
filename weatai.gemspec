@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.summary     =  'Get weather content from central weather bureau(Taiwan);'
   s.description =  'Extracts temperature and humidity for different city'
   s.authors     =  ['soainfinite888']
-  s.email       =  ['wer321011@gmail.com']
+  s.email       =  ['lisa5432126@gmail.com']
 
   s.files       =  `git ls-files`.split("\n")
   s.test_files  =  `git ls-files -- spec/*`.split("\n")
