@@ -8,5 +8,8 @@ branches:
     - master
 script: bundle exec rake spec
 env:
-  -DATA_ID=O-A0003-001
+  -DATA_ID1=O-A0003-001
+  -DATA_ID2=O-A0002-001
   -AUTH_KEY=CWB-88ABAD26-6BC8-497A-80E2-2A159654CBF6
+  -FORMAT=xml
+  -TOKEN=YxZhGGgNtUyzW7oi6EPpKQ
