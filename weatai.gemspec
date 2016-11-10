@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.executables << 'weatai'
 
   s.add_runtime_dependency 'http', '~> 2.0'
-  s.add_runtime_dependency 'activesupport', '>= 4.2'
+  s.add_runtime_dependency 'activesupport', '>= 4.2.6'
 
   s.add_development_dependency 'minitest', '~> 5.9'
   s.add_development_dependency 'minitest-rg', '~> 5.2'
