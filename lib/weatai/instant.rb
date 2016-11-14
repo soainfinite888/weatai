@@ -12,6 +12,7 @@ module CWB
     end
 
     def self.instant
+      #return @instant if @instant
       station = CWB::Rain.instant_rain.keys
       all_location1 = CWB::Weather.instant_weather
       all_location2 = CWB::Rain.instant_rain
@@ -20,7 +21,7 @@ module CWB
       station.each do |item|
         location = {}
         place = item
-        location['time'] = all_location2[item]['time']
+        location['time'] = all_location1[item]['time']
         location['city'] = all_location2[item]['city']
         location['town'] = all_location2[item]['town']
         location['TEMP'] = all_location1[item]['TEMP']
@@ -37,10 +38,12 @@ module CWB
     def self.local(position)
       station = CWB::Rain.instant_rain.keys
       if (position.in?(station))
-        puts CWB::INSTANT.instant.assoc(position).to_yaml
-      else
-        puts "Please enter a station!"
+        CWB::INSTANT.instant.assoc(position)
       end
+    end
+
+    def self.find(dataid:)
+      new(dataid: dataid)
     end
 
     def weather_test
