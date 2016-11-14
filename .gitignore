@@ -1,5 +1,8 @@
 coverage/
 config/
 cassettes/
+
+spec/fixtures
+spec/coverage/
 *.gem
 Gemfile.lock
