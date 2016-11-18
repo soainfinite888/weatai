@@ -21,7 +21,7 @@ module CWB
       n=1
       station.each do |item|
         location = {}
-        location['Station'] =item
+        location['Station'] = item
         location['City'] = all_location2[item]['city']
         location['Town'] = all_location2[item]['town']  
         location['Temp'] = all_location1[item]['TEMP']
