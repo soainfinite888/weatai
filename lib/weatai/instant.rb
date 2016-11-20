@@ -18,7 +18,7 @@ module CWB
       all_location2 = CWB::Rain.instant_rain
       all_location3 = CWB::PSI.instant_psi
       all_location4 = {}
-      n=1
+      n = 1
       station.each do |item|
         location = {}
         location['Station'] = item
@@ -28,11 +28,11 @@ module CWB
         location['Humd'] = all_location1[item]['HUMD']
         location['Last 10 minutes Rainfall'] = all_location2[item]['MIN_10'] 
         location['Daily Accumulated Rainfall'] = all_location2[item]['Daily Accumulated Rainfall'] 
-        location['PSI'] = all_location3[location['city']]['PSI'] if location['city'].in?(all_location3.keys.uniq)
-        location['Status'] = all_location3[location['city']]['Status'] if location['city'].in?(all_location3.keys.uniq)
+        location['PSI'] = all_location3[location['City']]['PSI'] if location['City'].in?(all_location3.keys.uniq)
+        location['Status'] = all_location3[location['City']]['Status'] if location['City'].in?(all_location3.keys.uniq)
         location['Time'] = all_location1[item]['time']
         all_location4.store(n, location)
-        n+=1
+        n += 1
       end
       all_location4
     end
