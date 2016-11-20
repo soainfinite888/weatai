@@ -38,7 +38,7 @@ module CWB
     end
 
     def self.local(position)
-      station = CWB::Rain.instant_rain.keys
+      station = CWB::INSTANT.instant.keys
       if (position.in?(station))
         CWB::INSTANT.instant.assoc(position)
       end
